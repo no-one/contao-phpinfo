@@ -1,0 +1,49 @@
+#phpinfo {
+	margin: 10px;
+}
+
+#phpinfo table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+}
+
+#phpinfo th,
+#phpinfo td {
+	border: 1px solid #555;
+	padding: 2px;
+}
+
+#phpinfo th {
+	background-color: #b3b6b3;
+	color: #fff;
+}
+
+#phpinfo .e {
+	background-color: #f0f0f0;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+#phpinfo .scroll {
+	overflow: auto;
+}
+
+#phpinfo img {
+	float: right;
+}
+
+#phpinfo h1 {
+	font-size: 1.063rem;
+}
+
+#phpinfo h2 {
+	font-size: .875rem;
+}
+
+/* PHP 5.6: <br /> after </table> was removed */
+#phpinfo.v56 table:after {
+	content: "";
+	display: block;
+	margin-bottom: 13px;
+}

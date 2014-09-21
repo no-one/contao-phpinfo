@@ -1,0 +1,12 @@
+
+<div id="phpinfo" class="<?php echo $this->class; ?>">
+  <?php if ($this->disableFunctions): ?>
+    <h2><?php echo $GLOBALS['TL_LANG']['phpinfo']['disabled']['headline']; ?></h2>
+    <p><?php echo $GLOBALS['TL_LANG']['phpinfo']['disabled']['disableFunctions']; ?></p>
+  <?php elseif ($this->suhosinBlacklist): ?>
+    <h2><?php echo $GLOBALS['TL_LANG']['phpinfo']['disabled']['headline']; ?></h2>
+    <p><?php echo $GLOBALS['TL_LANG']['phpinfo']['disabled']['suhosinBlacklist']; ?></p>
+  <?php else: ?>
+    <?php echo $this->output; ?>
+  <?php endif; ?>
+</div>
